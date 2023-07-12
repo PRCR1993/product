@@ -35,8 +35,7 @@ public class StudentController {
     }
     @PutMapping(value="/students/{id}")
     public Student updateStudent(@PathVariable("id") @Min(1) int id, @Valid @RequestBody Student newstd) {
-        Student stdu = studentservice.findById(id)
-                                     .orElseThrow(()->new StudentNotFoundException("Student with "+id+" is Not Found!"));
+        Student stdu = studentservice.findById(id).orElseThrow(()->new StudentNotFoundException("Student with "+id+" is Not Found!"));
         stdu.setFirstname(newstd.getFirstname());
         stdu.setLastname(newstd.getLastname());
         stdu.setEmail(newstd.getEmail());
