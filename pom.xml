@@ -51,6 +51,8 @@
 		</dependency>
 	</dependencies>
 
+	<!--//Todo some activities-->
+
 	<build>
 		<plugins>
 			<plugin>

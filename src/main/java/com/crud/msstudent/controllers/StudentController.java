@@ -48,4 +48,9 @@ public class StudentController {
         studentservice.deleteById(std.getId());
         return "Student with ID :"+id+" is deleted";            
     }
+
+    @GetMapping(value = "/indexapi")
+    public String index(){
+        return "Succesfully Application is running";
+    }
 }

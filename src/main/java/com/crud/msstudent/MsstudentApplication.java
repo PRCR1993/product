@@ -10,4 +10,6 @@ public class MsstudentApplication {
 		SpringApplication.run(MsstudentApplication.class, args);
 	}
 
+
+	//Need to add some beans here
 }
